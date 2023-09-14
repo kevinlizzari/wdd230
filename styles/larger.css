@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  body {
+    font-size: 31px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .card {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .card:nth-child(1) {
+    grid-column: 2;
+  }
+
+  .card:nth-child(2) {
+    grid-column: 1;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 0 100px;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+}
