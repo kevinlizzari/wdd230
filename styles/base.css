@@ -79,7 +79,7 @@ nav ul li a:active {
 /* Main Content Styles */
 main {
   background-color: #fff;
-  padding: 20px;
+  padding: 62px;
 }
 
 h3 {
@@ -105,4 +105,26 @@ footer {
 }
 footer p {
   margin: 0;
+}
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger-icon {
+    display: block;
+  }
 }

@@ -12,6 +12,7 @@
     <meta property="og:image" content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png"> 
     <meta property="og:url" content="https://kevinlizzari.github.io/wdd230/"> 
 
+    <link rel="stylesheet" href="styles/custom-normalization.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -20,13 +21,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburgermenu.js"></script>
+    
+    
 </head>
 <body>
     <header>
+        
         <img src="images/me.png" alt="Your Profile Image">
         <h1>Kevin Lizzari</h1>
+        <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+            &#8801;
+        </div>
+        <div id="mode" onclick="toggleDarkMode()">
+            ☑️
+        </div>
     </header>
-    <nav>
+    <!--<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>-->
+
+     <!-- Hidden menu for mobile -->
+     <nav id="hidden-menu" class="hidden-menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -34,6 +55,7 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -59,6 +81,7 @@
         <p id="lastModified">  </p>
         <script src="scripts/getDates.js"></script>
     </footer>
+    <script src="scripts/darkmode.js"></script>
     
     
 </body>
