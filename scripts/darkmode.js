@@ -1,7 +1,7 @@
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const cardSections = document.querySelectorAll(".card");
-
+function toggleDarkMode() {
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("☑️")) {
         main.style.backgroundColor = "#000";
@@ -21,3 +21,5 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "☑️";
     }
 });
+console.log("Toggling dark mode");  // For testing
+}
