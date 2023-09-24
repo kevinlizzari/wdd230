@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: 30px;
+  }
+
+  header img {
+    max-width: 15%;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  h1 span {
+    display: inline;
+  }
+
+  section.hero img {
+    max-height: 400px;
+  }
+
+  .cta-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 15px;
+  }
+
+  .cta-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  nav.hidden-menu {
+    display: flex !important;
+    justify-content: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Cambio en la plantilla de filas */
+    grid-template-columns: 1fr 1fr; /* Cambio en la plantilla de columnas */
+    grid-gap: 10px;
+  }
+  .events {
+    border: 1px solid #000;
+  }
+  .events h2 {
+    text-align: center;
+  }
+
+  .weather {
+    text-align: center;
+    border: 1px solid #000;
+  }
+
+  .spotlights {
+    grid-row: 2;
+    grid-column: span 2; /* Ocupa dos columnas */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Tres filas de igual altura */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual anchura */
+    grid-gap: 10px;
+  }
+
+  .spotlight {
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    grid-row: 2;
+  }
+
+  /* Mantenemos estos estilos para .spotlights h2 y .spotlight h3 */
+
+  .spotlights h2 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .spotlight h3 {
+    text-align: center;
+  }
+}

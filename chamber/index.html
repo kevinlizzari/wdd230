@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milano Chamber of Commerce</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development, Kevin Lizzari, Chamber page">
+    <meta name="description" content="WDD 230 - Kevin Lizzari, Chamber of Commerce Page">
     <meta name="author" content="Kevin Lizzari">
 
     <meta property="og:title" content="Milano Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.centroservizimediterraneo.it/wp-content/uploads/2021/12/camera-di-commercio-578718.jpg"> 
+    <meta property="og:description" content="The amazing local business community in Milano">
     <meta property="og:url" content="https://kevinlizzari.github.io/wdd230/chamber/index.html"> 
-
-
+    <link rel="stylesheet" href="styles/normalize-reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link href="images/favicon (1).ico" rel="icon" type="image/x-icon">
@@ -20,10 +20,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script src="scripts/hamburgermenu.js"></script>
+
 </head>
 <body>
+    <header>
+        <img src="images/cofc.png" alt="Milano Chamber of Commerce Logo">
+        <h1>
+            <span>Milano</span>
+            <span>Chamber of Commerce</span>
+        </h1>
+        
+        <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+            &#8801;
+        </div>
+    </header>
+    <nav id="hidden-menu" class="hidden-menu">   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section class="hero">
+        <div class="cta-overlay">
+            <a href="#" class="cta-button">Join the Chamber</a>
+        </div>
+        <img src="images/hero.jpg" alt="Hero Image">
+    </section>
 
+    <div class="grid-container">
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Event 1: Event details and description.</p>
+            <p>Event 2: </p>
+            <p>Event 3: </p>
+        </section>
+    
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>to add later</p>
+        </section>
+    
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Spotlight Company 1</h3>
+                <p>Details Company 1.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Spotlight Company 2</h3>
+                <p>Details Company 2.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Spotlight Company 3</h3>
+                <p>Details Company 3.</p>
+            </div>
+        </section>
+    </div>
 
-
+    <footer>
+        <div class="footer-content">
+            <p>Contact: <a href="mailto:milanochamberofcommerce@gmail.com">milanochamberofcommerce@gmail.com</a></p>
+            <p>Project by Kevin Lizzari for WDD 230</p>
+            <p>&copy;<span id="currentYear"></span> Milano Chamber of Commerce</p>
+            <p id="lastModified">  </p>
+            <script src="scripts/getDates.js"></script>
+        </div>
+    </footer>
 </body>
 </html>
