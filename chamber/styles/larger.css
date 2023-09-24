@@ -36,15 +36,18 @@
     display: flex !important;
     justify-content: center;
   }
+
   .grid-container {
     display: grid;
-    grid-template-rows: auto 1fr; /* Cambio en la plantilla de filas */
-    grid-template-columns: 1fr 1fr; /* Cambio en la plantilla de columnas */
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .events {
     border: 1px solid #000;
   }
+
   .events h2 {
     text-align: center;
   }
@@ -56,10 +59,10 @@
 
   .spotlights {
     grid-row: 2;
-    grid-column: span 2; /* Ocupa dos columnas */
+    grid-column: span 2;
     display: grid;
-    grid-template-rows: repeat(3, 1fr); /* Tres filas de igual altura */
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual anchura */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
 
@@ -69,8 +72,6 @@
     text-align: center;
     grid-row: 2;
   }
-
-  /* Mantenemos estos estilos para .spotlights h2 y .spotlight h3 */
 
   .spotlights h2 {
     grid-column: 2;
