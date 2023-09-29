@@ -1,39 +1,4 @@
 @media screen and (min-width: 768px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  body {
-    font-size: 31px;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  .card {
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-
-  .card:nth-child(1) {
-    grid-column: 2;
-  }
-
-  .card:nth-child(2) {
-    grid-column: 1;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    font-size: 2rem;
-  }
   header {
     display: flex;
     align-items: center;
@@ -59,9 +24,95 @@
 
   nav ul li {
     margin: 0 100px;
+    display: inline;
   }
 
-  nav ul li {
-    display: inline;
+  body {
+    font-size: 31px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-column: 1 / span 2;
+    max-width: fit-content;
+  }
+
+  .card {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .card:nth-child(1) {
+    grid-column: 2/4;
+  }
+
+  .card:nth-child(2) {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 450px;
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+
+  iframe {
+    width: 100%;
+    position: static;
+  }
+
+  .hero {
+    grid-column: 1/4;
+    margin: 10px auto;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 500%;
+  }
+
+  .herolabel {
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4d5b97);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+  }
+
+  .herolabel p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 715px;
+    margin-top: 20px;
+    grid-row: 3;
+  }
+  .card:nth-child(1) {
+    grid-column: 3;
+  }
+  .card:nth-child(2) {
+    grid-column: 1;
+  }
+
+  footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
   }
 }

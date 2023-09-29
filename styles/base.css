@@ -80,6 +80,8 @@ nav ul li a:active {
 main {
   background-color: #fff;
   padding: 50px;
+  max-width: 670px;
+  margin: 0 auto;
 }
 
 h3 {
@@ -127,4 +129,40 @@ footer p {
   .hamburger-icon {
     display: block;
   }
+}
+
+.hero {
+  margin: 10px auto;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 1);
+  height: 300px;
+  margin-top: -51px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.herolabel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: radial-gradient(#fff, #4d5b97);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 0.2rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.herolabel p {
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-family: "serif";
+}
+
+iframe {
+  width: 100%;
+  /*height: auto;*/
 }
