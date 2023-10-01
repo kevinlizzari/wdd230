@@ -105,3 +105,30 @@ footer p {
     display: block;
   }
 }
+/*DISCOVER*/
+
+.sidebar-section {
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f1e6ff;
+  text-align: center;
+}
+
+main figure {
+  border: 1px solid #c00c8a;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #f1e6ff;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #000000;
+}
