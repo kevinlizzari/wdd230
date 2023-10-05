@@ -1,0 +1,70 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Lizzari - WDD 230 - Web Frontend Development - Form Submission</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Kevin Lizzari, course assignment portal">
+    <meta name="author" content="Kevin Lizzari">
+
+    <meta property="og:title" content="Kevin Lizzari - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png"> 
+    <meta property="og:url" content="https://kevinlizzari.github.io/wdd230/"> 
+
+    <link rel="stylesheet" href="styles/custom-normalization.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburgermenu.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        
+        <img src="images/me.webp" alt="Your Profile Image">
+        <h1>Kevin Lizzari</h1>
+        <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+            &#8801;
+        </div>
+        <!--<div id="mode" onclick="toggleDarkMode()">
+            ☑️
+        </div>-->
+    </header>
+    
+    <nav id="hidden-menu" class="hidden-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Form Submission</h1>
+        <p>Thank you! Your form has been submitted successfully.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kevin Lizzari </p>
+        <p>Italy</p>
+        <p id="lastModified">  </p>
+        <script src="scripts/getDates.js"></script>
+    </footer>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/page-visit-counter.js"></script>
+    
+</body>
+</html>

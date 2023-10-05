@@ -1,0 +1,56 @@
+:root {
+  --main-padding: 0 2%;
+  --main-min-height: 40rem;
+  --form-margin: 4rem 0;
+}
+
+main {
+  padding: var(--main-padding);
+  min-height: var(--main-min-height);
+}
+
+form {
+  margin: var(--form-margin);
+}
+
+form label {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+  border: none;
+  background-color: #000c35;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+form input[type="password"]:required,
+form input[type="email"]:required,
+form input[type="text"]:required {
+  border-left: red solid 6px;
+}
+
+form input[type="password"]:valid,
+form input[type="email"]:valid,
+form input[type="text"]:valid {
+  border-left: green solid 6px;
+}
