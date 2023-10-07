@@ -45,40 +45,44 @@
         </ul>
     </nav>
     
-    <section class="hero">
-        <div class="cta-overlay">
-            <a href="#" class="cta-button">Join the Chamber</a>
-        </div>
-        <img src="images/hero.webp" alt="Hero Image">
-    </section>
+   <main>
+    <form action="thankyou.html" method="get">
+        <label for="first_name">Applicant's First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
 
-    <section class="events">
-        <h2>Current Events</h2>
-        <p>Event 1: Event details and description.</p>
-        <p>Event 2: </p>
-        <p>Event 3: </p>
-    </section>
+        <label for="last_name">Applicant's Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
 
-    <section class="weather">
-        <h2>Weather</h2>
-        <p>to add later</p>
-    </section>
+        <label for="title">Title or Position:</label>
+        <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
 
-    <section class="spotlights">
-        <h2>Company Spotlights</h2>
-        <div class="spotlight">
-            <h3>Spotlight Company 1</h3>
-            <p>Details Company 1.</p>
-        </div>
-        <div class="spotlight">
-            <h3>Spotlight Company 2</h3>
-            <p>Details Company 2.</p>
-        </div>
-        <div class="spotlight">
-            <h3>Spotlight Company 3</h3>
-            <p>Details Company 3.</p>
-        </div>
-    </section>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="phone">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="business_name">Business/Organization's Name:</label>
+        <input type="text" id="business_name" name="business_name" required>
+
+        <label for="membership_level">Membership Level:</label>
+        <select id="membership_level" name="membership_level">
+            <option value="">--Please choose an option--</option>
+            <option value="np_membership">NP Membership - Access to networking events, basic listing on the chamber website, exclusive for non profit organizations, there is no fee</option>
+            <option value="bronze_membership">Bronze Membership - 10% discount on chamber events, standard listing on the chamber website</option>
+            <option value="silver_membership">Silver Membership - 15% discount on chamber events, premium listing on the chamber website, access to exclusive training sessions</option>
+            <option value="gold_membership">Gold Membership - 20% discount on chamber events, featured listing on the chamber website, priority access to all events and training sessions</option>
+        </select> 
+
+        
+        <label for="description">Business/Organization's Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
 
     <footer>
         <div class="footer-content">
@@ -89,5 +93,7 @@
             <script src="scripts/getDates.js"></script>
         </div>
     </footer>
+    <script src="scripts/timestamp.js"></script>
+
 </body>
 </html>
