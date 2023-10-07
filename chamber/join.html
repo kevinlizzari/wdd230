@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <img src="images/cofc.webp" alt="Milano Chamber of Commerce Logo">
+        <img src="images/cofc.webp" alt="Milano Chamber of Commerce Logo" width="195" height="196">
         <h1>
             <span>Milano</span>
             <span>Chamber of Commerce</span>
@@ -46,42 +46,97 @@
     </nav>
     
    <main>
-    <form action="thankyou.html" method="get">
-        <label for="first_name">Applicant's First Name:</label>
-        <input type="text" id="first_name" name="first_name" required>
+    <div class="container">
+        <form action="thankyou.html" method="get">
+            <label for="first_name">Applicant's First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
 
-        <label for="last_name">Applicant's Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required>
+            <label for="last_name">Applicant's Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
 
-        <label for="title">Title or Position:</label>
-        <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
+            <label for="title">Title or Position:</label>
+            <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 
-        <label for="phone">Mobile Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-        <label for="business_name">Business/Organization's Name:</label>
-        <input type="text" id="business_name" name="business_name" required>
+            <label for="business_name">Business/Organization's Name:</label>
+            <input type="text" id="business_name" name="business_name" required>
 
-        <label for="membership_level">Membership Level:</label>
-        <select id="membership_level" name="membership_level">
-            <option value="">--Please choose an option--</option>
-            <option value="np_membership">NP Membership - Access to networking events, basic listing on the chamber website, exclusive for non profit organizations, there is no fee</option>
-            <option value="bronze_membership">Bronze Membership - 10% discount on chamber events, standard listing on the chamber website</option>
-            <option value="silver_membership">Silver Membership - 15% discount on chamber events, premium listing on the chamber website, access to exclusive training sessions</option>
-            <option value="gold_membership">Gold Membership - 20% discount on chamber events, featured listing on the chamber website, priority access to all events and training sessions</option>
-        </select> 
+            <label for="membership_level">Membership Level:</label>
+            <select id="membership_level" name="membership_level">
+                <option value="">--Please choose an option--</option>
+                <option value="np_membership">NP Membership - Access to networking events, basic listing on the chamber website, exclusive for non profit organizations, there is no fee</option>
+                <option value="bronze_membership">Bronze Membership - 10% discount on chamber events, standard listing on the chamber website, 20% fee</option>
+                <option value="silver_membership">Silver Membership - 15% discount on chamber events, premium listing on the chamber website, access to exclusive training sessions, 15% fee</option>
+                <option value="gold_membership">Gold Membership - 20% discount on chamber events, featured listing on the chamber website, priority access to all events and training sessions, 10% fee</option>
+            </select> 
 
+            <label for="description">Business/Organization's Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <table>
         
-        <label for="description">Business/Organization's Description:</label>
-        <textarea id="description" name="description"></textarea>
-
-        <input type="hidden" id="timestamp" name="timestamp">
-
-        <input type="submit" value="Submit">
-    </form>
+            <thead>
+              <tr>
+                  <th colspan="5">Membership Levels</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>NP Membership</th>
+                <th>Bronze Membership</th>
+                <th>Silver Membership</th>
+                <th>Gold Membership</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Access to networking events</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+              </tr>
+              <tr>
+                <td>Listing on the chamber website</td>
+                <td>Basic</td>
+                <td>Standard</td>
+                <td>Premium</td>
+                <td>Featured</td>
+              </tr>
+              <tr>
+                  <td>Discount on chamber events</td>
+                  <td>-</td>
+                  <td>10%</td>
+                  <td>15%</td>
+                  <td>20%</td>
+              </tr>
+              <tr>
+                  <td>Access to exclusive training sessions</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>✔️</td>
+                  <td>Priority Access</td>
+              </tr>
+              <tr>
+                  <td>Fees</td>
+                  <td>No fee (exclusive for non profit organizations)</td>
+                  <td>20% fee</td>
+                  <td>15% fee</td>
+                  <td>10% fee</td>
+              </tr>
+          
+            </tbody>    
+        </table>
+    </div>
 </main>
 
     <footer>
