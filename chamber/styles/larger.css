@@ -150,7 +150,6 @@
     margin-top: 10px;
     border-radius: 8px;
     display: table;
-    /* width: 80%; /* Adjust as needed */
     margin-left: 50px;
     background-color: #cff7fa;
   }
@@ -201,5 +200,24 @@
 
   tbody tr:nth-child(odd) {
     background-color: #ffffff;
+  }
+
+  /*DIRECTORY*/
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    padding-top: 10px;
+  }
+  #directory-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 900px) {
+    .grid-view {
+      width: auto;
+    }
   }
 }

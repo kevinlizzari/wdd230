@@ -1,0 +1,70 @@
+[
+    {
+      "name": "L'acqua del Sindaco",
+      "address": "123 Street, Milan, Italy",
+      "phone": "+39 345185141",
+      "website": "https://www.comune.milano.it/-/ambiente.-l-acqua-del-sindaco-diventa-a-porter-in-brick-ecologici-e-sostenibili",
+      "imageurl": "https://cdn1.whatabeer.com/beers/details/lacqua_del_sindaco_1649773203.jpg",
+      "membershipLevel": "NP membership",
+      "order":1
+    },
+    {
+      "name": "Redroom Store",
+      "address": "456 Avenue, Milan, Italy",
+      "phone": "+39 4567890164",
+      "website": "https://www.redroomstore.com/shop",
+      "imageurl": "https://www.redroomstore.com/wp-content/uploads/2022/01/logo-redroom.png",
+      "membershipLevel": "Silver",
+      "order":2
+    },
+    {
+      "name": "Baldo Legnami",
+      "address": "789 Boulevard, Milan, Italy",
+      "phone": "+39 5678901278",
+      "website": "https://baldolegnami.it/",
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSYowt0TAIkk3Z_aRhbuOIPyFOEJMl-0cPyVDSglRsQ&s",
+      "membershipLevel": "Gold",
+      "order":3
+
+    },
+    {
+      "name": "Natura Selection",
+      "address": "101112 Drive, Milan, Italy",
+      "phone": "+39 4567890123",
+      "website": "https://naturaselection.it/",
+      "imageurl": "https://theurbanactivist.com/wp-content/uploads/2016/11/natura-selection-profile-2.jpg",
+      "membershipLevel": "Gold",
+      "order":4
+
+    },
+    {
+      "name": "Centro Botanico",
+      "address": "123 Street, Milan, Italy",
+      "phone": "+39 1234567890",
+      "website": "https://centrobotanico.org/",
+      "imageurl": "https://www.vitadasani.it/wp-content/uploads/2017/09/centrobotanicologo.jpg",
+      "membershipLevel": "Silver",
+      "order":5
+
+    },
+    {
+      "name": "Progetto Arca",
+      "address": "456 Avenue, Milan, Italy",
+      "phone": "+39 2345678901",
+      "website": "https://www.progettoarca.org/",
+      "imageurl": "https://progetti.progettoarca.org/wp-content/uploads/progettoarca_logo_simple.png",
+      "membershipLevel": "NP membership",
+      "order":6
+
+    },
+    {
+      "name": "Milano Vetri",
+      "address": "789 Boulevard, Milan, Italy",
+      "phone": "+39 3456789012",
+      "website": "https://www.milanovetri.it/",
+      "imageurl": "https://media.licdn.com/dms/image/C4D0BAQGGs2JoTUSFaA/company-logo_100_100/0/1651844393713?e=2147483647&v=beta&t=okwSNPmjPVBoHqS6s7ZshLpeWzMYHiXabfP4uWY3BKQ",
+      "membershipLevel": "Silver",
+      "order":7
+
+    }
+]
