@@ -33,7 +33,7 @@ h1 span {
 section.hero img {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 150px;
 }
 
 nav {
@@ -77,6 +77,38 @@ nav a {
 
 .cta-button:hover {
   background-color: #ccadfc;
+}
+
+.spotlights,
+.weather,
+.events {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+section {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+}
+
+.events,
+.weather,
+.spotlights {
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+}
+.weather img {
+  width: 45px;
+  height: 45px;
 }
 
 footer {
@@ -214,11 +246,10 @@ table {
 
 .list-view {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   margin: 10px;
-  width: 490px;
-  margin-left: -20px;
+  width: 400px;
+  margin-left: -10px;
 }
 
 .list-view img {
@@ -232,4 +263,20 @@ table {
     margin-bottom: -30px;
     margin-left: 15px;
   }
+}
+
+#banner {
+  background-color: #f9ed69;
+  color: #f08a5d;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#closeBanner {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
 }
