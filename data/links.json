@@ -92,15 +92,6 @@
             "title":"Weather"
           }
         ]
-      },
-      {
-        "week": "Week 6",
-        "links": [
-          {
-            "url":"",
-            "title":"Activity"
-          }
-        ]
       }
     ]
   }
