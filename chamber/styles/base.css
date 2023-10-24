@@ -242,6 +242,12 @@ table {
   .grid-view {
     width: auto;
   }
+  .list-view {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: -30px;
+    margin-left: 15px;
+  }
 }
 
 .list-view {
@@ -256,14 +262,14 @@ table {
   display: none;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .list-view {
     flex-direction: column;
     width: 80%;
     margin-bottom: -30px;
     margin-left: 15px;
   }
-}
+}*/
 
 #banner {
   background-color: #f9ed69;
