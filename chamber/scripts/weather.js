@@ -1,11 +1,11 @@
 async function getWeather() {
-    const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Milano&units=metric&appid=2abe799f052664beedcfb86ceeb26619');
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Milano&units=metric&appid=2abe799f052664beedcfb86ceeb26619');
     const data = await response.json();
     return data;
 }
 
 async function getForecast() {
-    const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q=Milano&units=metric&appid=2abe799f052664beedcfb86ceeb26619');
+    const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=Milano&units=metric&appid=2abe799f052664beedcfb86ceeb26619');
     const data = await response.json();
     return data;
 }
