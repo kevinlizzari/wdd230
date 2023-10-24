@@ -94,6 +94,10 @@ section {
   padding: 10px;
 }
 
+.events p {
+  margin-bottom: 17px;
+}
+
 .events,
 .weather,
 .spotlights {
@@ -272,8 +276,8 @@ table {
 }*/
 
 #banner {
-  background-color: #f9ed69;
-  color: #f08a5d;
+  background-color: #f5e85a;
+  color: #aa3300;
   padding: 20px;
   position: relative;
   text-align: center;
